@@ -16,7 +16,7 @@ namespace tp2_WebApplicationWeb
 
         protected void btn_generarTabla_Click(object sender, EventArgs e)
         {
-
+            string tabla = "<tabla borde = '1'>";
         }
     }
 }
