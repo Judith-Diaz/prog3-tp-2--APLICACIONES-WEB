@@ -26,7 +26,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp; cantidad :&nbsp;
             <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
         </p>
-        <asp:Button ID="btn_generarTabla" runat="server" Text="Generar Tabla" />
+        <asp:Button ID="btn_generarTabla" runat="server" Text="Generar Tabla" Height="26px" OnClick="btn_generarTabla_Click" />
     </form>
     <table id="tb_tabla" class="auto-style1"  bordes ="1">
         <tr>

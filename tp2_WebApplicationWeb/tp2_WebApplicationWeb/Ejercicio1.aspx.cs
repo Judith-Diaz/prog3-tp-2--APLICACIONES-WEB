@@ -13,5 +13,10 @@ namespace tp2_WebApplicationWeb
         {
             
         }
+
+        protected void btn_generarTabla_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
