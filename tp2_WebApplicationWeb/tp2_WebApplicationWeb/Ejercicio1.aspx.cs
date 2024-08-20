@@ -16,8 +16,34 @@ namespace tp2_WebApplicationWeb
 
         protected void btn_generarTabla_Click(object sender, EventArgs e)
         {
-            string tabla = "<tabla borde = '1'>";
-            tabla += "<tr> <td>productos<td><td>cantidad</td></tr>";
+            string producto=txt_proodcuto1.Text;
+            string producto2=txt_prodcuto2.Text;
+            int cantidad = int.Parse(txt_cantidad1.Text);
+            int cantidad2 = int.Parse(txt_cantidad2.Text);
+            int suma = (cantidad + cantidad2);
+            
+            string tabla = "<table border = '1'>";
+            tabla = "<tr> <td> Prodcuto </td><td>Cantidad </td></tr>";
+            
+                tabla += "<tr>";
+                tabla += "<td>" + producto + "</td>";
+                tabla += "<td>" + cantidad + "</td>";
+                tabla += "</tr>";
+
+            tabla += "<tr>";
+            tabla += "<td>" + producto2 + "</td>";
+            tabla += "<td>" + cantidad2 + "</td>";
+            tabla += "</tr>";
+
+
+            tabla += "<tr>";
+            tabla += "<td>" + "Total" + "</td>";
+            tabla += "<td>"+suma+  "</td>";
+            tabla += "</tr>";
+            tabla += "</table>";
+            lbl_tabla.Text = tabla;
         }
+
+        
     }
 }
