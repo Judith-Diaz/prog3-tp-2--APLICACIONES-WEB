@@ -24,13 +24,13 @@ namespace tp2_WebApplicationWeb
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// Control txt_proodcuto1.
+        /// Control txt_producto1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_proodcuto1;
+        protected global::System.Web.UI.WebControls.TextBox txt_producto1;
 
         /// <summary>
         /// Control txt_cantidad1.
@@ -42,13 +42,22 @@ namespace tp2_WebApplicationWeb
         protected global::System.Web.UI.WebControls.TextBox txt_cantidad1;
 
         /// <summary>
-        /// Control txt_prodcuto2.
+        /// Control lbl_error.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_prodcuto2;
+        protected global::System.Web.UI.WebControls.Label lbl_error;
+
+        /// <summary>
+        /// Control txt_producto2.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txt_producto2;
 
         /// <summary>
         /// Control txt_cantidad2.
@@ -60,13 +69,13 @@ namespace tp2_WebApplicationWeb
         protected global::System.Web.UI.WebControls.TextBox txt_cantidad2;
 
         /// <summary>
-        /// Control btn_generarTabla.
+        /// Control btn_enerarTabla.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_generarTabla;
+        protected global::System.Web.UI.WebControls.Button btn_enerarTabla;
 
         /// <summary>
         /// Control lbl_tabla.
