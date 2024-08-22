@@ -10,7 +10,11 @@
 <body>
     <form id="form1" runat="server">
         <div>
+            <asp:Label ID="Lbl_Resumen" runat="server" Font-Bold="True" Font-Italic="False" Font-Names="arial" Font-Size="30pt"></asp:Label>
+            <br />
+            <br />
         </div>
     </form>
+    
 </body>
 </html>

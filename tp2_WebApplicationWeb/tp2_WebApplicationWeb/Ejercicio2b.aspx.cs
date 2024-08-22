@@ -11,7 +11,17 @@ namespace tp2_WebApplicationWeb
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            string nombre;
+            string apellido;
 
+
+            nombre = Request.QueryString["nom"];
+            apellido = Request.QueryString["ape"];
+            Lbl_Resumen.Text = nombre+ " "+ apellido;
+                
+
+     
+        
         }
     }
 }
