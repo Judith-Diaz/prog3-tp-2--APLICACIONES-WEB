@@ -15,13 +15,15 @@ namespace tp2_WebApplicationWeb
             string apellido;
 
 
-            nombre = Request.QueryString["nom"];
-            apellido = Request.QueryString["ape"];
-            Lbl_Resumen.Text = nombre+ " "+ apellido;
-                
+            /* nombre = Request.QueryString["nom"];
+             apellido = Request.QueryString["ape"];
+             Lbl_Resumen.Text = nombre+ " "+ apellido;
 
-     
-        
+             */
+            nombre = Request["Txt_Nombre"].ToString();
+            apellido = Request["Txt_APellido"].ToString();
+            Lbl_Resumen.Text = nombre + " " + apellido;
+
         }
     }
 }

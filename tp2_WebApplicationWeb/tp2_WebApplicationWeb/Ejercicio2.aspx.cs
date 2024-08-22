@@ -46,7 +46,8 @@ namespace tp2_WebApplicationWeb
                 nombre = " ";
                 apellido = " ";
 
-              Response.Redirect("Ejercicio2b.aspx?nom=" + Txt_Nombre.Text + "&ape=" + Txt_Apellido.Text);
+                //  Response.Redirect("Ejercicio2b.aspx?nom=" + Txt_Nombre.Text + "&ape=" + Txt_Apellido.Text);
+                Server.Transfer("Ejercicio2b.aspx");
 
             }
             else {
