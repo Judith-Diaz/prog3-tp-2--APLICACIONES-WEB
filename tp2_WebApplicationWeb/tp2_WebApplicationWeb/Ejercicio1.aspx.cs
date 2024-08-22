@@ -101,7 +101,7 @@ namespace tp2_WebApplicationWeb
                 
                 //lbl_error.Text="El producto ingresado no es valido, verificar que no este vacio y que no contenga signos ni numeros";
                 // Response.Write("<span stylr='color: red;'>erroro</span>"); //PARA HACER CARTELES TAMBIEN PODRIA USAR ESTE
-               
+               //nota: el tamaño de la tabla desde c· nbo em permitio modificar asique afarre directamente el html y le puse el tamño ahi
              
             }
 
