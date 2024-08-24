@@ -33,27 +33,42 @@ namespace tp2_WebApplicationWeb
                 return true; 
             }
         }  
+        protected string GuardarSeleccion(ListItemCollection items) //EXPLICACION  "ListItemCollection items" :  representa una colección de elementos (ítems) que provienen, por ejemplo, de un control como un CheckBoxList, ListBox o ComboBox
+        { 
+           
+            string guardado = " ";//aca es donde se me van  gguardan todos eso items que voy a concatenar, empieza con " " vacias pq asi empieza la concatenacion, sino me da error por todos lados
+            foreach (ListItem varItem in items)// recorre cada elemento ListItem en la coleccion items
+            {
 
+                if (varItem.Selected)//loq ue hace es verificar si el elemnto actual varItem esta seleccionado, y si lo esta  se guarda y empeiza la concatenacion en guardar
+                {
+                    guardado += varItem.Text + "<br/>";//le agregge un salto de linea ,porque si no me mostraba uno arlado del otro , y yo lo queria en forma de lista
+                }
+            }
+            return guardado;//le voy a enviar toda una cadena de string con los items seleccionados
+        }
 
         protected void Btn_Resumen_Click(object sender, EventArgs e)
         {
             string nombre=Txt_Nombre.Text.Trim();
             string apellido=Txt_Apellido.Text.Trim();
-         int listDesplegable = Ddl_Ciudad.SelectedIndex;
+            int listDesplegable = Ddl_Ciudad.SelectedIndex;
             int temasCheclist= Cb_Items.SelectedIndex;
             if (ValidoIsLetter(nombre) && EspacioVacio(nombre) && ValidoIsLetter(apellido) && EspacioVacio(apellido)&& SeleccionItem(listDesplegable) && SeleccionItem(temasCheclist))//me mande altas validaciones aca
             {
-                nombre = " ";
-                apellido = " ";
-
-                //  Response.Redirect("Ejercicio2b.aspx?nom=" + Txt_Nombre.Text + "&ape=" + Txt_Apellido.Text);
-                Server.Transfer("Ejercicio2b.aspx");
-
+                string seleccionTemas;
+                seleccionTemas = GuardarSeleccion(Cb_Items.Items);//en la funcion que hice envio los items que seleecione para ser evaluaados adentro de foreach y me los va a contener, ay que retorna el guardar de la funcion
+                Session["seleccionTemas"]=seleccionTemas;//session es un obj  qeu permite almacenar (request),¨{osea para ejerccio2b.aspx} entonces loq q se hace aca es crear una Session con la palabra clave ["seleccionTemas"], que al avez esta va a contener Todos los items selecionados que contiene la variable seleccionarItems
+              
+                 //Response.Redirect("Ejercicio2b.aspx?nom=" + nombre + "&ape=" + apellido );NO LO USO..
+                Server.Transfer("Ejercicio2b.aspx");//MANDA TODO PARA LA OTRA PAGINA
+                
             }
-            else {
+            else 
+            {
                 Lbl_Error.Text = ("<span style ='color: purple;'> Campos incorrecto </span>");
             }
-            
+        
         }
     }
 }

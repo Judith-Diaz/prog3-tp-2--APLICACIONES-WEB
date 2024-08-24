@@ -15,6 +15,17 @@
             <br />
         </div>
         <asp:Label ID="Lbl_Resumen" runat="server"></asp:Label>
+    &nbsp;<br />
+        <br />
+        Los Temas elegidos son :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:Label ID="lb_CbItems" runat="server" Font-Bold="True"></asp:Label>
+&nbsp;</p>
+        <p>
+            &nbsp;</p>
+        <br />
+        <br />
     </form>
     
 </body>
