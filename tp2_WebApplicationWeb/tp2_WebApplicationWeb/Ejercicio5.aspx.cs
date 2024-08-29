@@ -14,7 +14,12 @@ namespace tp2_WebApplicationWeb
 
         }
 
-        protected void Cbox_Monitor_SelectedIndexChanged(object sender, EventArgs e)
+        protected void Cbox_Monitor_SelectedIndexChanged(object sender, EventArgs e)//!! no que carajo es esto, o como lo llegue a poner m,e da mierso hacer cagada si lo borro
+        {
+
+        }
+
+        protected void Btn_CalcularPRecio_Click(object sender, EventArgs e)
         {
 
         }

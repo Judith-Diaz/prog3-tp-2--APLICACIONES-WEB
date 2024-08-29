@@ -16,7 +16,7 @@
             <asp:TextBox ID="Txt_Usuario" runat="server" Width="180px"></asp:TextBox>
             <br />
 &nbsp; Clave:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:TextBox ID="Txt_Clave" runat="server" Width="181px"></asp:TextBox>
+            <asp:TextBox ID="Txt_Clave" runat="server" TextMode="Password" Width="181px"></asp:TextBox>
             <br />
         </div>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

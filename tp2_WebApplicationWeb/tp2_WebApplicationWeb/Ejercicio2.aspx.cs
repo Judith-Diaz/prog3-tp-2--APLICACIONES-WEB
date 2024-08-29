@@ -42,7 +42,7 @@ namespace tp2_WebApplicationWeb
 
                 if (varItem.Selected)//loq ue hace es verificar si el elemnto actual varItem esta seleccionado, y si lo esta  se guarda y empeiza la concatenacion en guardar
                 {
-                    guardado += varItem.Text + "<br/>";//le agregge un salto de linea ,porque si no me mostraba uno arlado del otro , y yo lo queria en forma de lista
+                    guardado += "<br/>" +varItem.Text + "<br/>";//le agregge un salto de linea ,porque si no me mostraba uno arlado del otro , y yo lo queria en forma de lista
                 }
             }
             return guardado;//le voy a enviar toda una cadena de string con los items seleccionados

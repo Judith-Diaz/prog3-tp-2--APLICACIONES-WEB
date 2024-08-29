@@ -17,15 +17,15 @@ namespace tp2_WebApplicationWeb
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-           string nombre_;
+          string nombre_;
           string apellido;
-           string zona;
+          string zona;
           
 
           nombre_ = Request["Txt_Nombre"].ToString();
-            apellido = Request["Txt_APellido"].ToString();
+          apellido = Request["Txt_APellido"].ToString();
           zona = Request["Ddl_Ciudad"];
-             string tema_;
+          string tema_;
              
            
             if (Session["seleccionTemas"] != null )//|| nombre_!=null || apellido !=null || zona !=null)
@@ -37,7 +37,7 @@ namespace tp2_WebApplicationWeb
                                   " Zona : " + "<b>" +  zona + "</b>" +"<br/> " + " <br/>";
 
 
-                lb_CbItems.Text = tema_;
+                lb_CbItems.Text = " <br/>"+tema_ + " <br/>";
             }
             else
             {

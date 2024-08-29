@@ -31,7 +31,7 @@ namespace tp2_WebApplicationWeb
             else
             {
                 //TENGO LA DUDA SI ESTA BIEN PONER  Server.Transfer("Ejercicio4c.aspx");, PORQUE YO NO ESTOY MANDANSO NADA EN SI , NINGUN DATO QUIERO LLEVAR A AESA PAGINA
-                Server.Transfer("Ejercicio4c.aspx");
+               Response.Redirect("Ejercicio4c.aspx");//para redireccionar sin parametros!!!!!!!!!esponse.Redirect
             }
         }
     }
