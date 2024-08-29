@@ -13,5 +13,26 @@ namespace tp2_WebApplicationWeb
         {
 
         }
+
+        protected void Btn_Validar_Click(object sender, EventArgs e)
+        {
+            string usuario= Txt_Usuario.Text.Trim();
+            string clave = Txt_Clave.Text.Trim();
+            //No voy a validar nada, proque un usuario y cntraseña puede llevar cualquier  tipo de letra, simbolo  
+
+            //mi usuasrio :judith
+            //contraseña: 1234.
+
+            //vamos a comparar con eso
+            if(usuario=="judith" && clave == "1234.")
+            {
+                Server.Transfer("Ejercicio4b.aspx");
+            }
+            else
+            {
+                //TENGO LA DUDA SI ESTA BIEN PONER  Server.Transfer("Ejercicio4c.aspx");, PORQUE YO NO ESTOY MANDANSO NADA EN SI , NINGUN DATO QUIERO LLEVAR A AESA PAGINA
+                Server.Transfer("Ejercicio4c.aspx");
+            }
+        }
     }
 }

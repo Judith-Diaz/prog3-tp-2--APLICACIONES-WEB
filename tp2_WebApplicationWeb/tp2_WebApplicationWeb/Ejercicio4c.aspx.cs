@@ -12,6 +12,9 @@ namespace tp2_WebApplicationWeb
         protected void Page_Load(object sender, EventArgs e)
         {
 
+           //ACA NO ENVIE NINGUN DATO DE LA OTRA PAGINA PORQUE  NO LOS VOY A USAR
+
+            Lbl_Invalido.Text = "USUARIO INVALIDO INGRESO NO PERMITDO";
         }
     }
 }

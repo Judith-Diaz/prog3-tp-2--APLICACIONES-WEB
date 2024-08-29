@@ -7,13 +7,16 @@ using System.Web.UI.WebControls;
 
 namespace tp2_WebApplicationWeb
 {
-    public partial class Ejercicio4b : System.Web.UI.Page
+    public partial class Ejercicio5 : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            string Nombre;
-           Nombre = Request["Txt_Usuario"].ToString();
-            Lbl_Bienvenida.Text =  "Bienvediso a mi página Sr./a " + Nombre;
+
+        }
+
+        protected void Cbox_Monitor_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

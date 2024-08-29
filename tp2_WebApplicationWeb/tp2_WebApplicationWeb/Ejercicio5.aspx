@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Ejercicio4c.aspx.cs" Inherits="tp2_WebApplicationWeb.Ejercicio4c" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Ejercicio5.aspx.cs" Inherits="tp2_WebApplicationWeb.Ejercicio5" %>
 
 <!DOCTYPE html>
 
@@ -10,8 +10,10 @@
 <body>
     <form id="form1" runat="server">
         <div>
+           <b style="font-size: 40px;"> Elija su Configuracion</b><br />
+            <br />
+            <b>seleccione cantidad de memoria :</b>
         </div>
-        <asp:Label ID="Lbl_Invalido" runat="server"></asp:Label>
     </form>
 </body>
 </html>

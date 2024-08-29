@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WebForm2.aspx.cs" Inherits="tp2_WebApplicationWeb.WebForm2" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Ejercicio4a.aspx.cs" Inherits="tp2_WebApplicationWeb.WebForm2" %>
 
 <!DOCTYPE html>
 
@@ -10,7 +10,17 @@
 <body>
     <form id="form1" runat="server">
         <div>
+            <br />
+            <br />
+&nbsp; Usuario:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:TextBox ID="Txt_Usuario" runat="server" Width="180px"></asp:TextBox>
+            <br />
+&nbsp; Clave:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:TextBox ID="Txt_Clave" runat="server" Width="181px"></asp:TextBox>
+            <br />
         </div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Button ID="Btn_Validar" runat="server" OnClick="Btn_Validar_Click" Text="Validar" />
     </form>
 </body>
 </html>
