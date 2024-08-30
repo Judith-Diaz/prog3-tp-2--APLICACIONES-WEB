@@ -31,7 +31,8 @@
             <asp:ListItem Value="1200$">Grabador DVD</asp:ListItem>
         </asp:CheckBoxList>
         <br />
-        </b>&nbsp;<p>
+        </b>&nbsp;<asp:Label ID="lbl_error" runat="server" ForeColor="#CC33FF"></asp:Label>
+        <p>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:Button ID="Btn_CalcularPRecio" runat="server" OnClick="Btn_CalcularPRecio_Click" Text="Calcular Previo" />
         </p>
