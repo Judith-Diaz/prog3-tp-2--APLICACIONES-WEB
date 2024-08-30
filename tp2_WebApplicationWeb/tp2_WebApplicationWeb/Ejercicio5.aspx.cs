@@ -30,30 +30,57 @@ namespace tp2_WebApplicationWeb
                 return true;
             }
         }
-        protected int acumuladorAccesorios(float acuValues) {
-            float acu = 0;
-            for (int i = 0; i < 2; i++)
+        protected Decimal acumuladorAccesorios() {
+            Decimal acu = 0;
+           foreach(ListItem item in Cbox_Accesorios.Items)
             {
-                acu = acu + acuValues;
+                if (item.Selected)
+                {
+                    acu += Decimal.Parse(item.Value);
+                }
             }
             return acu;
-        
         }
 
         protected void Btn_CalcularPRecio_Click(object sender, EventArgs e)
         {
-            int selecion= Cbox_Accesorios.SelectedIndex;
+            //primero agarro el precio de GB, y a partir de eso, iré acumulando
+            /* float Acumularprecio = 0;
+             Acumularprecio = float.Parse(Ddl_Memoria.SelectedValue);
+             //Recorrer cada item y su valor del combito 
+             foreach(ListItem itemSeleccion in Cbox_Accesorios.Items)
+             {
+                 if (itemSeleccion.Selected)
+                 {
+                 Acumularprecio += float.Parse(itemSeleccion.Value);
+
+                 }
+             }*/
+            Decimal PrecioFinalApagarJudi = 0;
+            PrecioFinalApagarJudi = Decimal.Parse(Ddl_Memoria.SelectedValue);
+         //   Lbl_Precio.Text = "El precio Fianl es de :" + Acumularprecio.ToString();
+
+             int selecion= Cbox_Accesorios.SelectedIndex;
             int memoria= Ddl_Memoria.SelectedIndex;
             if (SeleccionItem(selecion)==true && SeleccionItem(memoria)==true) 
             {
+                try
+                {//  Double seleccion_= Double.Parse(Cbox_Accesorios.SelectedValue);    
+                    
+                    Decimal acumulador = Decimal.Parse(Cbox_Accesorios.SelectedValue);
 
-                //float seleccion_= Convert.ToDecimal(Cbox_Accesorios.SelectedValue);    
-                float acumulador = acumuladorAccesorios(Cbox_Accesorios.SelectedValue);
-                float memoria_= (Ddl_Memoria.SelectedValue);
-                float precioFInal= 0;
-                 precioFInal = (acumulador +memoria_);
+                    Decimal JudiPaga = acumuladorAccesorios();
 
-                 Lbl_Precio.Text = "El precio Fianl es de :" + precioFInal;
+                    Decimal memoria_ = Decimal.Parse(Ddl_Memoria.SelectedValue);
+                   
+                    PrecioFinalApagarJudi = (JudiPaga + memoria_);
+                    
+                    Lbl_Precio.Text = "El precio Fianl es de :" + PrecioFinalApagarJudi+" en $$";
+                }catch(Exception ex)
+                {
+                    lbl_error.Text = ex.Message;
+                }
+             
 
             }else
             {
