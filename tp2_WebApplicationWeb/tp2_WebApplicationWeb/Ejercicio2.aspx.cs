@@ -24,6 +24,8 @@ namespace tp2_WebApplicationWeb
 
             return texto.Trim().Length > 0; //en este caso si *NO* HAY ESPACIOS EN BLANCO devuelve true, si hay esapcios en blanco seria =0 y devuelve false //, si era == 0 ; quiero decir que  si hay espacio en blanco entonces me va a devolver true
         }
+
+
         protected bool SeleccionItem(int item )//lo que estoy buscabdo es que el desplegable combobox, tenga alguna opcion seleccionada, si no esta nada selecionado devuelve -1(ua que empieza desde cero su lista), use la misma funcion para el cheklist, osea las opciones para selelcionar , es elm ismo  metodo
         {
             if (item == -1){
@@ -33,6 +35,8 @@ namespace tp2_WebApplicationWeb
                 return true; 
             }
         }  
+
+
         protected string GuardarSeleccion(ListItemCollection items) //EXPLICACION  "ListItemCollection items" :  representa una colección de elementos (ítems) que provienen, por ejemplo, de un control como un CheckBoxList, ListBox o ComboBox
         { 
            
